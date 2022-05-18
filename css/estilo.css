@@ -35,6 +35,11 @@ header {
     bottom: 60px;
     font-size: 200%;
     margin: 5%;
+    transition: .5s;
+}
+
+.menuPrincipal:hover{
+    transform: scale(1.1);
 }
 
 .homeImage {
@@ -46,6 +51,34 @@ header {
 .mainDisplay {
     text-align: center;
     margin: 10%;
+}
+
+#mainImg {
+    filter: blur(2px);
+    transition: all .5s;
+    border-radius: 100px;
+}
+
+#mainImg:hover {
+    filter: blur(0);
+    transform: scale(1.2);
+    z-index: 2;
+    position: relative;
+    cursor: pointer;
+    outline: solid 2px black;
+}
+
+.prodImg {
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.prodImg:hover {
+    transform: scale(1.2);
+    z-index: 2;
+    position: relative;
+    cursor: pointer;
+    border-radius: 100px;
 }
 
 .tituloSeccion {
@@ -102,4 +135,7 @@ footer {
 #socialFooter {
     display:grid;
     text-align: right;
+}
+input:focus {
+    background-color: rgb(69, 219, 194);
 }
