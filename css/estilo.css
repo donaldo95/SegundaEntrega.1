@@ -79,6 +79,7 @@ header {
     position: relative;
     cursor: pointer;
     border-radius: 100px;
+    outline: solid 2px green;
 }
 
 .tituloSeccion {
